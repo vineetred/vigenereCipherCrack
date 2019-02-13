@@ -60,5 +60,5 @@ def vigenereCrack(keySize):
 keyLength = input("Enter max key length: ")
 keys = vigenereCrack(int(keyLength))
 for key in keys:
-    print("\nKey: ", key)
+    print("\nKey: ", key, " Length: ",len(key))
     print(decrypt(cipher_text,key))
