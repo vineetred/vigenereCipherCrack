@@ -1,4 +1,4 @@
-def car(text, shift):
+def crack(text, shift):
     result = ""
     for i in range(len(text)):
         char = text[i]
@@ -6,7 +6,7 @@ def car(text, shift):
     print("Shift = ",shift)
     print(result)
 
-cipher = "uryczrvzgenccrqvafvqrnpnrfnepvcurenaqpnagtrgbhg"
+cipher = "hgnodxnthmsdqbdossghrrdbqdssqzmrlhrrhnmvhsgntszmxdqqnqsghrsqzmrlhrrhnmgzrsqzudkkdczlhkkhnmkhfgsxdzqrsnhmenqlxntsgzsvdzqdbnlhmfrnnm"
 
 for i in range(0,25):
-    car(cipher, i)
+    crack(cipher, i)
