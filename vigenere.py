@@ -4,13 +4,13 @@ letters = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o', 'p', 'q'
 #From the Oxford Math Centre
 letterFreq = {'E': 12.70, 'T': 9.06, 'A': 8.17, 'O': 7.51, 'I': 6.97, 'N': 6.75, 'S': 6.33, 'H': 6.09, 'R': 5.99, 'D': 4.25, 'L': 4.03, 'C': 2.78, 'U': 2.76, 'M': 2.41, 'W': 2.36, 'F': 2.23, 'G': 2.02, 'Y': 1.97, 'P': 1.93, 'B': 1.29, 'V': 0.98, 'K': 0.77, 'J': 0.15, 'X': 0.15, 'Q': 0.10, 'Z': 0.07}
 #Enter cipher text here!!!!!!!
-cipher_text = "hdsfgvmkoowafweetcmfthskucaqbilgjofmaqlgspvatvxqbiryscpcfrmvswrvnqlszdmgaoqsakmlupsqforvtwvdfcjzvgsoaoqsacjkbrsevbelvbksarlscdcaarmnvrysywxqgvellcyluwwveoafgclazowafojdlhssfiksepsoywxafowlbfcsocylngqsyzxgjbmlvgrggokgfgmhlmejabsjvgmlnrvqzcrggcrghgeupcyfgtydycjkhqluhgxgzovqswpdvbwsffsenbxapasgazmyuhgsfhmftayjxmwznrsofrsoaopgauaaarmftqsmahvqecev"
+cipher_text = "qivjukosqegnyiytxypshzewjsnsdpeybsuiranshzewjsnsdvusdvozqhasghexhvtdrynjyirlrrnfpekjbsuhucnjyirlrrnfveylrsdgbinjyirlrrnfwilqbsuqlisfqhhzuxytxaewhroxwvasjirxwsltyiytxontzxhjuyljvenivsdtlectpqiypinylwwmdxirosoplrgkrvytxaoswkeywlixivordrytwlewjyynmysyzensdxeqocozkswnpjejomnlzensdqaphcozxrdjuwtfqhnjyirlrrnfjmvjbsuzsreahvgtqraqhxytxhobq"
 
 #This function decrypts a given cipher text when supplied with the key
-def decrypt(ciphertext, key):
+def decrypt(cipherText, key):
     key_length = len(key)
     key_as_int = [ord(i) for i in key]
-    ciphertext_int = [ord(i) for i in ciphertext]
+    ciphertext_int = [ord(i) for i in cipherText]
     plaintext = ''
     for i in range(len(ciphertext_int)):
         value = (ciphertext_int[i] - key_as_int[i % key_length]) % 26
