@@ -1,1 +1,1 @@
-To run vigenere cipher cracker, one needs to just use Python3. The cipher text to be cracked needs to be changed in the file, vigenere.py. 
+To run vigenere cipher cracker, one needs to just use Python3. The cipher text to be cracked needs to be changed in the file, vigenere.py, by editing the variable cipher_text.
